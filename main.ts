@@ -5,6 +5,13 @@
 
 // ============ 数据存储 ============
 // Deno Deploy 自带 KV,免费,无需额外配置
+// 需要 unstable 特性
+declare const Deno: {
+  openKv: () => Promise<Deno.Kv>;
+  serve: (handler: (req: Request) => Response | Promise<Response>) => void;
+  env: { get(key: string): string | undefined };
+};
+
 async function getKv() {
   return await Deno.openKv();
 }
