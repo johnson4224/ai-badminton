@@ -298,6 +298,17 @@ ul,ol{list-style:none}
   box-shadow:0 6px 20px rgba(60,40,15,.18);
 }
 .player-card:hover{border-color:var(--red);transform:translateY(-3px);box-shadow:0 14px 30px rgba(60,40,15,.25)}
+
+/* 退役球员:灰暗一点 */
+.player-card.retired{
+  background:linear-gradient(180deg,#f4ecda 0%,#e9dfc5 100%);
+  filter:grayscale(.25);
+  opacity:.92;
+}
+.player-card.retired:hover{filter:grayscale(0);opacity:1}
+.player-card.retired .player-info h3{color:#7a6a4a}
+.player-card.retired .player-badge{background:#8a7a5e;color:#f5ecd9}
+.player-card.retired .player-info .pdesc{border-left-color:#8a7a5e}
 .player-photo{aspect-ratio:1/1;background-size:cover;background-position:center;position:relative}
 .player-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, transparent 30%, rgba(250,243,227,.92) 100%)}
 .player-tag{position:absolute;top:14px;left:14px;background:rgba(40,28,12,.8);backdrop-filter:blur(8px);color:#fff;font-family:var(--font-mono);font-size:10px;padding:5px 10px;border-radius:4px;letter-spacing:.1em;text-transform:uppercase;z-index:2}
@@ -480,10 +491,12 @@ ul,ol{list-style:none}
 <!-- ===== PLAYERS (SQUAD) ===== -->
 <section class="section" id="squad">
   <div class="container">
+
+    <!-- 现役男生 -->
     <header class="section-head">
-      <div class="eyebrow">SQUAD · 现役主力</div>
-      <h2 class="section-title">球员</h2>
-      <p class="section-sub">AHNU·AI 院队现役 5 大主力</p>
+      <div class="eyebrow">SQUAD · 现役男生</div>
+      <h2 class="section-title">现役</h2>
+      <p class="section-sub">AHNU·AI 院队现役主力</p>
     </header>
 
     <div class="players-grid">
@@ -491,60 +504,107 @@ ul,ol{list-style:none}
       <article class="player-card">
         <div class="player-photo p1">
           <span class="player-tag">AHNU · AI</span>
-          <span class="player-badge king">队史最强</span>
+          <span class="player-badge king">现役最强</span>
         </div>
         <div class="player-info">
-          <h3>周金鑫</h3>
-          <div class="prole">ZHOU Jinxin</div>
-          <div class="pdesc">队史最强战力</div>
+          <h3>汪聂翔</h3>
+          <div class="prole">WANG Niexiang</div>
+          <div class="pdesc">现役最强,体力好,打法犀利</div>
         </div>
       </article>
 
       <article class="player-card">
         <div class="player-photo p2">
           <span class="player-tag">AHNU · AI</span>
-          <span class="player-badge">XD · 混双</span>
+          <span class="player-badge">QUICK · 快攻</span>
         </div>
         <div class="player-info">
-          <h3>安 铭</h3>
-          <div class="prole">AN Ming</div>
-          <div class="pdesc">擅长混双</div>
+          <h3>姚轩</h3>
+          <div class="prole">YAO Xuan</div>
+          <div class="pdesc">快攻</div>
         </div>
       </article>
 
       <article class="player-card">
         <div class="player-photo p3">
           <span class="player-tag">AHNU · AI</span>
-          <span class="player-badge cap">CAPTAIN · 25 年队长</span>
+          <span class="player-badge">VETERAN · 老登</span>
         </div>
         <div class="player-info">
-          <h3>郑涤非</h3>
-          <div class="prole">ZHENG Difei</div>
-          <div class="pdesc">不会反手</div>
+          <h3>陈默</h3>
+          <div class="prole">CHEN Mo</div>
+          <div class="pdesc">老登打法</div>
         </div>
       </article>
 
       <article class="player-card">
         <div class="player-photo p4">
           <span class="player-tag">AHNU · AI</span>
-          <span class="player-badge">SMASH · 杀球手</span>
+          <span class="player-badge">MANHATTAN</span>
         </div>
         <div class="player-info">
-          <h3>周正扬</h3>
-          <div class="prole">ZHOU Zhengyang</div>
-          <div class="pdesc">反手天花板，会杀球</div>
+          <h3>郑涤非</h3>
+          <div class="prole">ZHENG Difei</div>
+          <div class="pdesc">曼哈顿式打法</div>
         </div>
       </article>
 
       <article class="player-card">
         <div class="player-photo p5">
           <span class="player-tag">AHNU · AI</span>
-          <span class="player-badge cap">CAPTAIN · 现任</span>
+          <span class="player-badge">SMASH · 杀球手</span>
+        </div>
+        <div class="player-info">
+          <h3>周正扬</h3>
+          <div class="prole">ZHOU Zhengyang</div>
+          <div class="pdesc">反手天花板,会杀球</div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- 现役女生 -->
+    <header class="section-head" style="margin-top:60px">
+      <div class="eyebrow" style="color:#a64ec8;background:rgba(166,78,200,.1)">SQUAD · 现役女生</div>
+      <h2 class="section-title">女队</h2>
+      <p class="section-sub">巾帼不让须眉</p>
+    </header>
+
+    <div class="players-grid">
+
+      <article class="player-card">
+        <div class="player-photo p5">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge" style="background:#a64ec8">FAINT · 晃人王</span>
         </div>
         <div class="player-info">
           <h3>何悠然</h3>
           <div class="prole">HE Youran</div>
-          <div class="pdesc">独特的握拍方式</div>
+          <div class="pdesc">喜欢晃人</div>
+        </div>
+      </article>
+
+      <article class="player-card">
+        <div class="player-photo p3">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge" style="background:#a64ec8">M · 很 man</span>
+        </div>
+        <div class="player-info">
+          <h3>陈怀钰</h3>
+          <div class="prole">CHEN Huaiyu</div>
+          <div class="pdesc">很 man</div>
+        </div>
+      </article>
+
+      <article class="player-card">
+        <div class="player-photo p2">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge" style="background:#a64ec8">SPEED · 跑动快</span>
+        </div>
+        <div class="player-info">
+          <h3>张钰婕</h3>
+          <div class="prole">ZHANG Yujie</div>
+          <div class="pdesc">跑动快</div>
         </div>
       </article>
 
@@ -560,6 +620,94 @@ ul,ol{list-style:none}
           <button type="submit">报名</button>
           <div class="join-msg" id="join-msg"></div>
         </form>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== LEGEND (RETIRED) ===== -->
+<section class="section alt" id="legend">
+  <div class="container">
+
+    <!-- 退役男生 -->
+    <header class="section-head">
+      <div class="eyebrow" style="color:#6b5a40;background:rgba(107,90,64,.12)">LEGEND · 退役男生</div>
+      <h2 class="section-title">退役</h2>
+      <p class="section-sub">江湖再见 · 队史功臣</p>
+    </header>
+
+    <div class="players-grid">
+
+      <article class="player-card retired">
+        <div class="player-photo p1">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge">LEGEND · 队史最强</span>
+        </div>
+        <div class="player-info">
+          <h3>周金鑫</h3>
+          <div class="prole">ZHOU Jinxin</div>
+          <div class="pdesc">队史最强战力</div>
+        </div>
+      </article>
+
+      <article class="player-card retired">
+        <div class="player-photo p2">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge">XD · 混双</span>
+        </div>
+        <div class="player-info">
+          <h3>安 铭</h3>
+          <div class="prole">AN Ming</div>
+          <div class="pdesc">擅长混双</div>
+        </div>
+      </article>
+
+      <article class="player-card retired">
+        <div class="player-photo p4">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge">CAPTAIN · 23 队长</span>
+        </div>
+        <div class="player-info">
+          <h3>靳亚凯</h3>
+          <div class="prole">JIN Yakai</div>
+          <div class="pdesc">23 年队长</div>
+        </div>
+      </article>
+
+      <article class="player-card retired">
+        <div class="player-photo p3">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge">TURING · 图灵式</span>
+        </div>
+        <div class="player-info">
+          <h3>韩诚</h3>
+          <div class="prole">HAN Cheng</div>
+          <div class="pdesc">图灵式打法</div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- 退役女生 -->
+    <header class="section-head" style="margin-top:60px">
+      <div class="eyebrow" style="color:#6b5a40;background:rgba(107,90,64,.12)">LEGEND · 退役女生</div>
+      <h2 class="section-title">女队</h2>
+      <p class="section-sub">曾经的巾帼</p>
+    </header>
+
+    <div class="players-grid">
+
+      <article class="player-card retired">
+        <div class="player-photo p5">
+          <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge">XD · 混双</span>
+        </div>
+        <div class="player-info">
+          <h3>朱 涛</h3>
+          <div class="prole">ZHU Tao</div>
+          <div class="pdesc">混双</div>
+        </div>
       </article>
 
     </div>
