@@ -530,7 +530,7 @@ ul,ol{list-style:none}
           <span class="player-badge">SMASH · 杀球手</span>
         </div>
         <div class="player-info">
-          <h3>周正杨</h3>
+          <h3>周正扬</h3>
           <div class="prole">ZHOU Zhengyang</div>
           <div class="pdesc">反手天花板，会杀球</div>
         </div>
