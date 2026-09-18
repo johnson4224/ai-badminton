@@ -706,7 +706,7 @@ ul,ol{list-style:none}
         <div class="player-info">
           <h3>吴时宇</h3>
           <div class="prole">WU Shiyu</div>
-          <div class="pdesc">接发稳准狠,落点到位;高远与斜线杀见长</div>
+          <div class="pdesc">高远与斜线杀见长</div>
         </div>
       </article>
 
