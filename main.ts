@@ -701,12 +701,24 @@ ul,ol{list-style:none}
       <article class="player-card retired">
         <div class="player-photo p5">
           <span class="player-tag">AHNU · AI</span>
+          <span class="player-badge king">LEGEND · 队史最强女生</span>
+        </div>
+        <div class="player-info">
+          <h3>吴时宇</h3>
+          <div class="prole">WU Shiyu</div>
+          <div class="pdesc">接发稳准狠,落点到位;高远与斜线杀见长</div>
+        </div>
+      </article>
+
+      <article class="player-card retired">
+        <div class="player-photo p3">
+          <span class="player-tag">AHNU · AI</span>
           <span class="player-badge">XD · 混双</span>
         </div>
         <div class="player-info">
           <h3>朱 涛</h3>
           <div class="prole">ZHU Tao</div>
-          <div class="pdesc">混双</div>
+          <div class="pdesc">混双老搭档</div>
         </div>
       </article>
 
